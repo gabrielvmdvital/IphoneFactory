@@ -4,11 +4,10 @@ import br.com.americanas.polotech.modulo3.iphoneFactory.models.Iphone;
 import br.com.americanas.polotech.modulo3.iphoneFactory.models.Iphone13Mini;
 import br.com.americanas.polotech.modulo3.iphoneFactory.models.Iphone9;
 import br.com.americanas.polotech.modulo3.iphoneFactory.models.IphoneX;
-import br.com.americanas.polotech.modulo3.iphoneFactory.repository.IFactory;
 
-public class concreteIphoneFactory implements IFactory {
 
-    @Override
+public class concreteIphoneFactory {
+
     public Iphone cadastrarIphone(TypeIphoneEnum model) {
         switch (model){
             case IPHONE_X: {
